@@ -1,14 +1,11 @@
 import React from 'react';
-import {Routes, Route, Link} from 'react-router-dom';
-import letterM from '/letterM.png'
-import Tasks from "../pages/Tasks";
-import Home from "../pages/Home";
+import {Link} from 'react-router-dom';
 
 function Navbar() {
     return (
         <div className="navbar">
             <div className="navbar-container">
-                <img src="/letterM.png" alt="icon"/>
+                <img src="/src/assets/images/letter.png" alt="icon"/>
                 <ul>
                     <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={"/tasks"}>Tasks</Link></li>
