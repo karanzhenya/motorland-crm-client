@@ -38,6 +38,8 @@ function Tasks() {
                         <th>Артикул</th>
                         <th>Кто поставил</th>
                         <th>Ответил</th>
+                        <th>Дата создания</th>
+                        <th>Дата ответа</th>
                     </tr>
                     {tasks.map(t =>
                         <tr key={t._id}>
@@ -45,6 +47,8 @@ function Tasks() {
                             <td>{t.article}</td>
                             <td>{t.task_creator}</td>
                             <td>{t.executor}</td>
+                            <td>{t.create_date}</td>
+                            <td>{t.execution_date}</td>
                             <button onClick={() => {
                                 removeTask(t._id, t.task_number)
                             }}>X
