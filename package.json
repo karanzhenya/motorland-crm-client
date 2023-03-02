@@ -1,5 +1,6 @@
 {
   "name": "motorland-crm",
+  "homepage": "https://motorland-client.vercel.app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
