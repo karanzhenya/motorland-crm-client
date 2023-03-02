@@ -28,7 +28,7 @@ function Tasks() {
         axios.get('https://motorland-crm.vercel.app/tasks').then((res) => {
             setTasks(res.data)
         })
-    }, [tasks])
+    }, [])
     return (
         <div className="task-table">
             <div className="task-table-container">
