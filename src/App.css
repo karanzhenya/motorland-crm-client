@@ -93,8 +93,9 @@ a:hover {
 .home-container, .fun-container, .registration-container, .login-container {
     width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }

@@ -20,7 +20,7 @@ function Navbar() {
                 <ul>
                     <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={"tasks"}>Tasks</Link></li>
-                    <li><Link to={"fun"}>Fun</Link></li>
+                    <li><Link to={"excel"}>Excel</Link></li>
                     <li><Link to={"login"}>Login</Link></li>
                     <li><Link to={"registration"}>Registration</Link></li>
                 </ul>
