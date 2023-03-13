@@ -1,6 +1,5 @@
 {
   "name": "motorland-crm",
-  "homepage": "https://motorland-client.vercel.app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +13,8 @@
     "axios": "^1.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.2"
+    "react-router-dom": "^6.8.2",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

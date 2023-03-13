@@ -1,17 +1,30 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+
 function Navbar() {
+   /* const [value, setValue] = useState<string>('')
+    const onChangeInputHandler = (e: ChangeEvent<HTMLInputElement>) => {
+        setValue(e.currentTarget.value)
+    }
+    const setPass = (e: KeyboardEvent<HTMLInputElement>) => {
+        if (e.charCode == 1) {
+            insertPass(value)
+        }
+        setValue('')
+    }*/
     return (
         <div className="navbar">
-            <div className="navbar-container">
+            <nav className="navbar-container">
                 <img src={"./assets/images/letter.png"} alt="logo"/>
                 <ul>
                     <li><Link to={"/"}>Home</Link></li>
-                    <li><Link to={"/tasks"}>Tasks</Link></li>
-                    <li><Link to={"/fun"}>Fun</Link></li>
+                    <li><Link to={"tasks"}>Tasks</Link></li>
+                    <li><Link to={"fun"}>Fun</Link></li>
+                    <li><Link to={"login"}>Login</Link></li>
+                    <li><Link to={"registration"}>Registration</Link></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     );
 }
