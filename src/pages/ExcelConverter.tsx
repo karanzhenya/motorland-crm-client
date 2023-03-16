@@ -13,8 +13,8 @@ function ExcelConverter() {
                 const sheetName = workbook.SheetNames[0];
                 const worksheet = workbook.Sheets[sheetName];
                 const json: any = utils.sheet_to_json(worksheet);
-                setData(json);
-                console.log(json)
+                setData(json.slice(2));
+                console.log(json.slice(2))
             };
             reader.readAsArrayBuffer(e.target.files[0]);
         }
