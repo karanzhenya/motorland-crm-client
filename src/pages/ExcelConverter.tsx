@@ -19,7 +19,7 @@ function ExcelConverter() {
             reader.readAsArrayBuffer(e.target.files[0]);
         }
     }
-    console.log(data[0])
+    
     return (
         <div className="fun">
             <div className="fun-container">
@@ -41,8 +41,7 @@ function ExcelConverter() {
                         {data === undefined ? null : data.map((d: any) =>
                             <>
                                 <tr key={d.name}>
-                                    <td>{d.name}</td>
-                                    <td>{d.date}</td>
+                                    <td>{d}</td>
                                     <hr/>
                                 </tr>
                             </>
