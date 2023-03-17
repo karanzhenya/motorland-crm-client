@@ -35,13 +35,19 @@ function ExcelConverter() {
                 <div className="content">
                     {data !== undefined && data.length > 0?<table>
                         <tr>
+                            <th>article</th>
+                            <th>№ car</th>
                             <th>name</th>
+                            <th>description</th>
+                            <th>internal description</th>
+                            <th>place</th>
                             <th>date</th>
                         </tr>
                         {data === undefined ? null : data.map((d: any) =>
                             <>
                                 <tr key={d.name}>
-                                    <td>{d}</td>
+                                    <td>{d.__EMPTY}</td>
+                                    <td>{d.__EMPTY_2}</td>
                                     <hr/>
                                 </tr>
                             </>
