@@ -46,8 +46,13 @@ function ExcelConverter() {
                         {data === undefined ? null : data.map((d: any) =>
                             <>
                                 <tr key={d.name}>
+                                    <td>{d[`Список запчастей в соответствии с настройками фильтра`]}</td>
                                     <td>{d.__EMPTY}</td>
                                     <td>{d.__EMPTY_2}</td>
+                                    <td>{d.__EMPTY_15}</td>
+                                    <td>{d.__EMPTY_16}</td>
+                                    <td>{d.__EMPTY_38}</td>
+                                    <td>{d.__EMPTY_45}</td>
                                     <hr/>
                                 </tr>
                             </>
