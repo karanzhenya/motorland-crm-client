@@ -19,6 +19,7 @@ function ExcelConverter() {
             reader.readAsArrayBuffer(e.target.files[0]);
         }
     }
+    console.log(data[0])
     return (
         <div className="fun">
             <div className="fun-container">
