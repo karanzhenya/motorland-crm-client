@@ -49,10 +49,6 @@ function Tasks() {
                             <td>{t.executor}</td>
                             <td>{t.create_date}</td>
                             <td>{t.execution_date}</td>
-                            //<button onClick={() => {
-                                //removeTask(t._id, t.task_number)
-                            //}}>X
-                            //</button>
                         </tr>
                     )}
                 </table>
