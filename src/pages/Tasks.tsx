@@ -15,15 +15,15 @@ function Tasks() {
     const [tasks, setTasks] = useState<TasksType[]>([])
     const [message, setMessage] = useState<string>('')
 
-    const removeTask = (id: string, taskNumber: number) => {
-        axios.delete(`https://motorland-crm.vercel.app/tasks/${id}`).then((res) => {
-            setMessage('task ' + taskNumber + ' was removed!')
-        }).then(() => {
-            setTimeout(() => {
-                setMessage('')
-            }, 3500)
-        })
-    }
+    //const removeTask = (id: string, taskNumber: number) => {
+        //axios.delete(`https://motorland-crm.vercel.app/tasks/${id}`).then((res) => {
+            //setMessage('task ' + taskNumber + ' was removed!')
+        //}).then(() => {
+           // setTimeout(() => {
+                //setMessage('')
+            //}, 3500)
+        //})
+    //}
     useEffect(() => {
         axios.get('https://motorland-crm.vercel.app/tasks').then((res) => {
             setTasks(res.data)
@@ -49,10 +49,10 @@ function Tasks() {
                             <td>{t.executor}</td>
                             <td>{t.create_date}</td>
                             <td>{t.execution_date}</td>
-                            <button onClick={() => {
-                                removeTask(t._id, t.task_number)
-                            }}>X
-                            </button>
+                            //<button onClick={() => {
+                                //removeTask(t._id, t.task_number)
+                            //}}>X
+                            //</button>
                         </tr>
                     )}
                 </table>
