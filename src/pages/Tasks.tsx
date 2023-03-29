@@ -53,6 +53,8 @@ function Tasks() {
                     )}
                 </table>
             </div>
+            <div>Общее кол-во задач: {tasks.length}</div>
+            <div>Общее кол-во задач: {tasks.length}</div>
             {message && message}
 
         </div>
