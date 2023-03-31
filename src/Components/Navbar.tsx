@@ -16,7 +16,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <nav className="navbar-container">
-                <img src={"https://cdn.pixabay.com/photo/2023/03/21/09/53/willow-catkin-7866866_960_720.jpg"} alt="logo"/>
+                <img src={"/"} alt="logo"/>
                 <ul>
                     <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={"tasks"}>Tasks</Link></li>
