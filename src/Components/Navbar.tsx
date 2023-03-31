@@ -16,7 +16,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <nav className="navbar-container">
-                <img src={"/"} alt="logo"/>
+                <img src={"https://static.db.motorland.by/part/7593821/0.jpg"} alt="logo"/>
                 <ul>
                     <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={"tasks"}>Tasks</Link></li>
