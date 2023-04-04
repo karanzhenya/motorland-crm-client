@@ -16,7 +16,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <nav className="navbar-container">
-                <img src={"https://media.istockphoto.com/id/1393504780/photo/m-letter-red-sign-3d-capital-letter-rendering.jpg?s=1024x1024&w=is&k=20&c=mYSXMkSnjg98vkflILCMPbMs5ZnCDLz5uCjfybLcfl4="} alt="logo" style={{width: "96px"}}/>
+                <img src={"https://www.pngplay.com/wp-content/uploads/4/Alphabet-M-PNG-Pic-Background.png"} alt="logo" style={{width: "96px"}}/>
                 <ul>
                     <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={"tasks"}>Tasks</Link></li>
