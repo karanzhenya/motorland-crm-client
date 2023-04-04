@@ -52,7 +52,7 @@ function ExcelConverter() {
                                     <td>{d.__EMPTY_15}</td>
                                     <td>{d.__EMPTY_16}</td>
                                     <td>{d.__EMPTY_38}</td>
-                                    <td>{d.__EMPTY_45.toLocaleString()}</td>
+                                    <td>{d.__EMPTY_45}</td>
                                     <hr/>
                                 </tr>
                             </>
