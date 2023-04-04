@@ -48,7 +48,7 @@ function Tasks() {
                             <td>{t.task_creator}</td>
                             <td>{t.executor}</td>
                             <td>{t.create_date}</td>
-                            <td>{t.execution_date.toLocaleString()}</td>
+                            <td>{new Date(t.execution_date).toLocaleString()}</td>
                         </tr>
                     )}
                 </table>
