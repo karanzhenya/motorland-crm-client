@@ -48,13 +48,13 @@ function Tasks() {
                             <td>{t.task_creator}</td>
                             <td>{t.executor}</td>
                             <td>{t.create_date}</td>
-                            <td>{t.execution_date}</td>
+                            <td>{t.execution_date.toLocaleString()}</td>
                         </tr>
                     )}
                 </table>
             </div>
             <div>Общее кол-во задач: {tasks.length}</div>
-            <div>Общее кол-во задач: {tasks.length}</div>
+            <div>Общее кол-во задач за месяц: {tasks.filter(t=>{t.execution_date >= new Date('04.01.2023').toLocaleDateString()}).length}</div>
             {message && message}
 
         </div>
