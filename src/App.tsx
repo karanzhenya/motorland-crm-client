@@ -7,6 +7,7 @@ import React from "react";
 import Login from "./pages/Login";
 import Registration from "./pages/Registration";
 import ExcelConverter from "./pages/ExcelConverter";
+import AddCarInfo from "./pages/AddCarInfo";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path={'/tasks'} element={<Tasks/>}/>
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/excel'} element={<ExcelConverter/>}/>
+                    <Route path={'/create'} element={<AddCarInfo/>}/>
                     <Route path={'/login'} element={<Login/>}/>
                     <Route path={'/registration'} element={<Registration/>}/>
                 </Routes>

@@ -18,9 +18,10 @@ function Navbar() {
             <nav className="navbar-container">
                 <img src={"https://www.pngplay.com/wp-content/uploads/4/Alphabet-M-PNG-Pic-Background.png"} alt="logo" style={{width: "96px"}}/>
                 <ul>
-                    <li><Link to={"/"}>Home</Link></li>
+                    <li><Link to={"/"}>Calendar</Link></li>
                     <li><Link to={"tasks"}>Tasks</Link></li>
                     <li><Link to={"excel"}>Excel</Link></li>
+                    <li><Link to={"create"}>Create</Link></li>
                     <li><Link to={"login"}>Login</Link></li>
                     <li><Link to={"registration"}>Registration</Link></li>
                 </ul>
