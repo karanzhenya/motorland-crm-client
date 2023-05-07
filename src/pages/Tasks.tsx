@@ -55,7 +55,10 @@ function Tasks() {
                 </table>
             </div>
             <div>Общее кол-во задач: {tasks.length}</div>
-            <div>Общее кол-во задач за месяц: {tasks.filter(t => Number(t.execution_date) >= Date.parse('04.01.2023')).length+10}</div>
+            <div>Общее кол-во задач за месяц: {tasks.filter(t => Number(t.execution_date) >= Date.parse('05.01.2023')).length}{/*<br/>
+                {tasks[0].execution_date}<br/>
+                {tasks[0].create_date}*/}
+            </div>
             {message && message}
 
         </div>

@@ -12,7 +12,7 @@ function AddCarInfo() {
     const [info, setInfo] = useState<string>('')
     const [carId, setCarId] = useState<string>('')
     const create = () => {
-        const obj = {
+        const obj: CarInfoType = {
             modelType,
             info,
             _car_id: carId
