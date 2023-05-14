@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Registration from "./pages/Registration";
 import ExcelConverter from "./pages/ExcelConverter";
 import AddCarInfo from "./pages/AddCarInfo";
+import UpdateCarInfo from "./pages/UpdateCarInfo";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/excel'} element={<ExcelConverter/>}/>
                     <Route path={'/create'} element={<AddCarInfo/>}/>
+                    <Route path={'/update'} element={<UpdateCarInfo/>}/>
                     <Route path={'/login'} element={<Login/>}/>
                     <Route path={'/registration'} element={<Registration/>}/>
                 </Routes>

@@ -1,0 +1,193 @@
+export const car_data = [{
+    id: "644ed640f0fd054a05bf3d16",
+    name: "ACURA"
+}, {
+    id: "644ed730f0fd054a05bf3d19",
+    name: "ALFA ROMEO"
+}, {
+    id: "644ed75e120db1ae6e9df469",
+    name: "AUDI"
+}, {
+    id: "644ed79d120db1ae6e9df46b",
+    name: "BMW"
+}, {
+    id: "644ed7a5120db1ae6e9df46d",
+    name: "BUICK"
+}, {
+    id: "644ed7b7120db1ae6e9df470",
+    name: "CADILLAC"
+}, {
+    id: "644ed7bd120db1ae6e9df472",
+    name: "CHERY"
+}, {
+    id: "644ed7c2120db1ae6e9df474",
+    name: "CHEVROLET"
+}, {
+    id: "644ed7d8120db1ae6e9df476",
+    name: "CHRYSLER"
+}, {
+    id: "644ed7dc120db1ae6e9df478",
+    name: "CITROEN"
+}, {
+    id: "644ed7e1120db1ae6e9df47a",
+    name: "DACIA"
+}, {
+    id: "644ed7e6120db1ae6e9df47c",
+    name: "DAEWOO"
+}, {
+    id: "644ed7eb120db1ae6e9df47e",
+    name: "DAIHATSU"
+}, {
+    id: "644ed7f0120db1ae6e9df480",
+    name: "DODGE"
+}, {
+    id: "644ed800120db1ae6e9df482",
+    name: "FIAT"
+}, {
+    id: "644ed806120db1ae6e9df484",
+    name: "FORD"
+}, {
+    id: "644ed80b120db1ae6e9df486",
+    name: "GMC"
+}, {
+    id: "644ed811120db1ae6e9df488",
+    name: "GREAT WALL"
+}, {
+    id: "644ed81a120db1ae6e9df48a",
+    name: "HAVAL"
+}, {
+    id: "644ed820120db1ae6e9df48c",
+    name: "HONDA"
+}, {
+    id: "644ed83c120db1ae6e9df48e",
+    name: "HUMMER"
+}, {
+    id: "644ed843120db1ae6e9df490",
+    name: "HYUNDAI"
+}, {
+    id: "644ed87f120db1ae6e9df492",
+    name: "INFINITI"
+}, {
+    id: "644ed892120db1ae6e9df494",
+    name: "ISUZU"
+}, {
+    id: "644ed897120db1ae6e9df496",
+    name: "IVECO"
+}, {
+    id: "644ed89c120db1ae6e9df498",
+    name: "JAGUAR"
+}, {
+    id: "644ed8a2120db1ae6e9df49a",
+    name: "JEEP"
+}, {
+    id: "644ed8a6120db1ae6e9df49c",
+    name: "KIA"
+}, {
+    id: "644ed8b6120db1ae6e9df49e",
+    name: "LANCIA"
+}, {
+    id: "644ed8bc120db1ae6e9df4a0",
+    name: "LAND ROVER"
+}, {
+    id: "644ed8c3120db1ae6e9df4a2",
+    name: "LDV (DAF)"
+}, {
+    id: "644ed8c9120db1ae6e9df4a4",
+    name: "LEXUS"
+}, {
+    id: "644ed8ce120db1ae6e9df4a6",
+    name: "LINCOLN"
+}, {
+    id: "644ed8d2120db1ae6e9df4a8",
+    name: "MAZDA"
+}, {
+    id: "644ed905120db1ae6e9df4aa",
+    name: "MERCEDES"
+}, {
+    id: "644ed909120db1ae6e9df4ac",
+    name: "MINI"
+}, {
+    id: "644ed90e120db1ae6e9df4ae",
+    name: "MITSUBISHI"
+}, {
+    id: "644ed914120db1ae6e9df4b0",
+    name: "NISSAN"
+}, {
+    id: "644ed919120db1ae6e9df4b2",
+    name: "OPEL"
+}, {
+    id: "644ed91d120db1ae6e9df4b4",
+    name: "PERODUA"
+}, {
+    id: "644ed921120db1ae6e9df4b6",
+    name: "PEUGEOT"
+}, {
+    id: "644ed926120db1ae6e9df4b8",
+    name: "PLYMOUTH"
+}, {
+    id: "644ed933120db1ae6e9df4ba",
+    name: "PONTIAC"
+}, {
+    id: "644ed93a120db1ae6e9df4bc",
+    name: "PORSCHE"
+}, {
+    id: "644ed93f120db1ae6e9df4be",
+    name: "PROTON"
+}, {
+    id: "644ed944120db1ae6e9df4c0",
+    name: "RENAULT"
+}, {
+    id: "644ed948120db1ae6e9df4c2",
+    name: "ROVER"
+}, {
+    id: "644ed94d120db1ae6e9df4c4",
+    name: "SAAB"
+}, {
+    id: "644ed951120db1ae6e9df4c6",
+    name: "SATURN"
+}, {
+    id: "644ed956120db1ae6e9df4c8",
+    name: "SCION"
+}, {
+    id: "644ed9af120db1ae6e9df4ca",
+    name: "SEAT"
+}, {
+    id: "644ed9b3120db1ae6e9df4cc",
+    name: "SKODA"
+}, {
+    id: "644ed9b8120db1ae6e9df4ce",
+    name: "SMART"
+}, {
+    id: "644ed9bd120db1ae6e9df4d0",
+    name: "SSANG YONG"
+}, {
+    id: "644ed9c3120db1ae6e9df4d2",
+    name: "SUBARU"
+}, {
+    id: "644ed9c9120db1ae6e9df4d4",
+    name: "SUZUKI"
+}, {
+    id: "644ed9cd120db1ae6e9df4d6",
+    name: "TESLA"
+}, {
+    id: "644ed9d1120db1ae6e9df4d8",
+    name: "TOYOTA"
+}, {
+    id: "644ed9d7120db1ae6e9df4da",
+    name: "VOLKSWAGEN"
+}, {
+    id: "644ed9dc120db1ae6e9df4dc",
+    name: "VOLVO"
+}, {
+    id: "644eda1e120db1ae6e9df4de",
+    name: "BEDFORD"
+}, {
+    id: "644edaa2120db1ae6e9df4e0",
+    name: "LAMBORGHINI"
+}, {
+    id: "644edadb120db1ae6e9df4e2",
+    name: "LIFAN"
+}, {
+    id: "644edaed120db1ae6e9df4e4",
+    name: "MG"
+}]
