@@ -21,6 +21,7 @@ function Navbar() {
                     <li><Link to={"/"}>Calendar</Link></li>
                     <li><Link to={"tasks"}>Tasks</Link></li>
                     <li><Link to={"excel"}>Excel</Link></li>
+                    <li><Link to={"bmw"}>BMW</Link></li>
                     <li><Link to={"create"}>Create</Link></li>
                     <li><Link to={"update"}>Update</Link></li>
                     <li><Link to={"login"}>Login</Link></li>

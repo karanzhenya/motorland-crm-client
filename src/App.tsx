@@ -9,6 +9,7 @@ import Registration from "./pages/Registration";
 import ExcelConverter from "./pages/ExcelConverter";
 import AddCarInfo from "./pages/AddCarInfo";
 import UpdateCarInfo from "./pages/UpdateCarInfo";
+import BMWdata from "./pages/BMWdata";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path={'/tasks'} element={<Tasks/>}/>
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/excel'} element={<ExcelConverter/>}/>
+                    <Route path={'/bmw'} element={<BMWdata/>}/>
                     <Route path={'/create'} element={<AddCarInfo/>}/>
                     <Route path={'/update'} element={<UpdateCarInfo/>}/>
                     <Route path={'/login'} element={<Login/>}/>
