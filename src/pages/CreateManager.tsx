@@ -13,7 +13,7 @@ function CreateManager() {
     const [message, setMessage] = useState<string>('')
     const {register, handleSubmit, reset} = useForm<CreateManagerType>()
     const onSubmit: SubmitHandler<CreateManagerType> = (data: CreateManagerType) => {
-        axios.post('http://localhost:5555/managers/create', {
+        axios.post('https://managers-server.vercel.app/managers/create', {
             name: data.name,
             number: data.number,
             department: data.department

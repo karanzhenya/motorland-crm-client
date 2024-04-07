@@ -11,7 +11,7 @@ function AllManagers() {
     const [message, setMessage] = useState<string>('')
     const [managers, setManagers] = useState<ManagerType[]>([])
     const removeManager = (id: string) => {
-        axios.delete('http://localhost:5555/managers/delete', {data: {id}}).then(res => {
+        axios.delete('https://managers-server.vercel.app/managers/delete', {data: {id}}).then(res => {
             setMessage(`Менеджер ${res.data.name} был удалён`)
         }).then(() => {
             setTimeout(() => {
@@ -33,7 +33,7 @@ function AllManagers() {
         rezultManagers = managers
     }
     useEffect(() => {
-        axios.get('http://localhost:5555/managers').then(res => {
+        axios.get('https://managers-server.vercel.app/managers').then(res => {
             setManagers(res.data)
         })
     }, [removeManager])

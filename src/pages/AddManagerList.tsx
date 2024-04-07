@@ -8,7 +8,7 @@ function AddManagersList() {
     const [array, setArray] = useState<string>('')
     const sendArray = () => {
         const data = JSON.parse(array)
-        data.forEach((item: CreateManagerType) => axios.post('http://localhost:5555/managers/create', {...item}).then(() => {
+        data.forEach((item: CreateManagerType) => axios.post('https://managers-server.vercel.app/managers/create', {...item}).then(() => {
             setMessage(`Массив менеджеров был добавлен`)
 
         }).then(() => {
