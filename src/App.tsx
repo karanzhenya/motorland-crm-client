@@ -4,12 +4,11 @@ import Navbar from "./Components/Navbar";
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import React from "react";
-import Login from "./pages/Login";
-import Registration from "./pages/Registration";
 import ExcelConverter from "./pages/ExcelConverter";
-import AddCarInfo from "./pages/AddCarInfo";
-import UpdateCarInfo from "./pages/UpdateCarInfo";
+import CreateManager from "./pages/CreateManager";
 import BMWdata from "./pages/BMWdata";
+import AllManagers from "./Components/AllManagers";
+import AddManagerList from "./pages/AddManagerList";
 
 function App() {
     return (
@@ -22,10 +21,9 @@ function App() {
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/excel'} element={<ExcelConverter/>}/>
                     <Route path={'/bmw'} element={<BMWdata/>}/>
-                    <Route path={'/create'} element={<AddCarInfo/>}/>
-                    <Route path={'/update'} element={<UpdateCarInfo/>}/>
-                    <Route path={'/login'} element={<Login/>}/>
-                    <Route path={'/registration'} element={<Registration/>}/>
+                    <Route path={'/create'} element={<CreateManager/>}/>
+                    <Route path={'/create_list'} element={<AddManagerList/>}/>
+                    <Route path={'/managers'} element={<AllManagers/>}/>
                 </Routes>
             </div>
         </div>
