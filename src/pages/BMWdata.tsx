@@ -16,7 +16,7 @@ function BMWdata() {
                 let arr: any = []
                 let count = 0
                 json.slice(2).forEach(function(item: any){
-                    arr.push({article: item['АРТИКУЛ'], name: item['ЗАПЧАСТЬ'], newName: '', fullNumber: ''})
+                    arr.push({article: item['ОРИГИНАЛЬНЫЙ НОМЕР'], name: item['ЗАПЧАСТЬ'], newName: '', fullNumber: ''})
                 })
                 console.log(arr)
             };
