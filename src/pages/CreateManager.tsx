@@ -14,7 +14,7 @@ function CreateManager() {
     const {register, handleSubmit, reset} = useForm<CreateManagerType>()
     const onSubmit: SubmitHandler<CreateManagerType> = (data: CreateManagerType) => {
         axios.post('https://managers-server.vercel.app/managers/create', {
-            name: data.name,
+            name: data.name.trim(),
             number: data.number,
             department: data.department
         }).then(res => {

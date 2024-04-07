@@ -25,7 +25,7 @@ a:hover {
 }
 
 .app {
-    width: 100vw;
+    width: 98.93vw;
     height: 100vh;
 }
 
@@ -197,8 +197,6 @@ a:hover {
     color: white;
     font-size: 18px;
 }
-
-
 .managers-list {
     height: calc(100vh - 120px);
     display: flex;
