@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import axios from "axios";
 import {CreateManagerType, DepartmentType} from "../pages/CreateManager";
 import ManagerList from "./ManagerList";
 import DepartmentButtons from "./DepartmentButtons";
+import axios from "axios";
 
 export type ManagerType = CreateManagerType & {
     _id: string
@@ -13,6 +13,9 @@ function AllManagers() {
     const [message, setMessage] = useState<string>('')
     const [managers, setManagers] = useState<ManagerType[]>([])
 
+    const changeManagersList = (_id: string) => {
+        setManagers(managers.filter(item => item._id !== _id))
+    }
     let rezultManagers = managers
     if (department === 'КЦ РФ') {
         rezultManagers = managers.filter(item => item.department === 'КЦ РФ')
@@ -30,12 +33,11 @@ function AllManagers() {
         axios.get('https://managers-server.vercel.app/managers').then(res => {
             setManagers(res.data)
         })
-    }, [message])
-    console.log('managers')
+    }, [setManagers])
     return (
         <div className={"managers-container"}>
             <DepartmentButtons setDepartment={setDepartment}/>
-            <ManagerList managers={rezultManagers} setMessage={setMessage}/>
+            <ManagerList managers={rezultManagers} setMessage={setMessage} setManagers={changeManagersList}/>
             {message && <div className='alert-message'>{message}</div>}
         </div>
     );

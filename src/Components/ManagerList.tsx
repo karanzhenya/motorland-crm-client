@@ -4,12 +4,15 @@ import {ManagerType} from "./AllManagers";
 
 type ManagerListProps = {
     managers: ManagerType[],
-    setMessage: (message: string) => void
+    setMessage: (message: string) => void,
+    setManagers: (_id: string) => void
 }
 
-function ManagerList({managers, setMessage}: ManagerListProps) {
+function ManagerList({managers, setMessage, setManagers}: ManagerListProps) {
+
     const removeManager = (id: string) => {
         axios.delete('https://managers-server.vercel.app/managers/delete', {data: {id}}).then(res => {
+            setManagers(id)
             setMessage(`Менеджер ${res.data.name} был удалён`)
         }).then(() => {
             setTimeout(() => {
