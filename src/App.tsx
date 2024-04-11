@@ -7,7 +7,7 @@ import React from "react";
 import ExcelConverter from "./pages/ExcelConverter";
 import CreateManager from "./pages/CreateManager";
 import BMWdata from "./pages/BMWdata";
-import AllManagers from "./Components/AllManagers";
+import AllManagers from "./pages/Managers";
 import AddManagerList from "./pages/AddManagerList";
 
 function App() {

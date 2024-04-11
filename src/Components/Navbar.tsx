@@ -12,9 +12,9 @@ function Navbar() {
                     {/*<li><Link to={"tasks"}>Tasks</Link></li>*/}
                     <li><Link to={"excel"}>Excel</Link></li>
                     <li><Link to={"bmw"}>BMW</Link></li>
-                    <li><Link to={"create"}>Create</Link></li>
-                    <li><Link to={"create_list"}>Add array</Link></li>
-                    <li><Link to={"managers"}>Managers</Link></li>
+                    <li><Link to={"create"}>Добавить менеджера</Link></li>
+                    <li><Link to={"create_list"}>Добавить массив менеджеров</Link></li>
+                    <li><Link to={"managers"}>Менеджеры</Link></li>
                 </ul>
             </nav>
         </div>
