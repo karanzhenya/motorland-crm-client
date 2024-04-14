@@ -13,7 +13,6 @@ import AddManagerList from "./pages/AddManagerList";
 function App() {
     return (
         <div className="app">
-            <div className="app-container">
                 <Navbar/>
                 <hr/>
                 <Routes>
@@ -25,7 +24,6 @@ function App() {
                     <Route path={'/create_list'} element={<AddManagerList/>}/>
                     <Route path={'/managers'} element={<AllManagers/>}/>
                 </Routes>
-            </div>
         </div>
     )
 }

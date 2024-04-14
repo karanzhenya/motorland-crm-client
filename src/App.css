@@ -24,11 +24,6 @@ a:hover {
     text-decoration: none;
 }
 
-.app {
-    width: 98.93vw;
-    height: 100vh;
-}
-
 .form-container {
     width: 100%;
     height: calc(100vh - 90px);
@@ -85,17 +80,17 @@ a:hover {
 .create-button {
     margin-top: 20px;
     border-radius: 10px;
-    height: 35px;
-    width: 150px;
+    padding: 10px 40px;
     border: #b4b4b9 0.1px solid;
     box-shadow: 3px 3px #9f9e9e;
+    transition: 0.5s;
 }
 
 .create-button:hover {
     transition: 0.5s;
     background-color: #0960b6;
     color: white;
-    width: 165px;
+    padding: 12px 42px;
     outline: none;
     font-size: 16px;
 }
@@ -133,22 +128,13 @@ a:hover {
     padding: 0;
 }
 
-.navbar {
-    height: 80px;
-    background-color: #0960b6;
-    display: flex;
-    width: 100%;
-    color: white;
-    justify-content: center;
-    align-items: center;
-}
-
 .navbar-container {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 80px;
+    background-color: #0960b6;
+    color: white;
 }
 
 .navbar-container ul {
@@ -157,6 +143,31 @@ a:hover {
     gap: 40px;
     justify-content: space-around;
     align-items: center;
+}
+
+@media screen and (max-width: 1241px) {
+    .navbar-container ul {
+        min-width: 46%;
+    }
+}
+
+@media screen and (max-width: 1071px) {
+    .navbar-container ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 717px) {
+    .navbar-container ul {
+        font-size: small;
+        gap: 5px;
+    }
+    .create-button {
+        padding: 5px 20px;
+    }
+    .create-button:hover {
+        padding: 7px 23px;
+    }
 }
 
 .navbar-container a:hover {
@@ -203,7 +214,9 @@ a:hover {
 
 .managers-container {
     max-height: calc(100vh - 120px);
+    width: 100%;
 }
+
 .managers-list {
 
     height: 100%;
@@ -239,9 +252,8 @@ a:hover {
     border-right: none;
 }
 
-
 .button-container {
-    width: 700px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }

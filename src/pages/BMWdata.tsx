@@ -1,24 +1,35 @@
 import React, {useState} from 'react';
 import {read, utils} from "xlsx";
 
+type RezultDataType = {
+    number: string,
+    name: string,
+    newName: string,
+    fullNumber: string
+}
+
 function BMWdata() {
-    const [data, setData] = useState<any[]>()
     const readUploadFile = (e: any) => {
         e.preventDefault();
         if (e.target.files) {
             const reader = new FileReader();
-            reader.onload = (e: any) => {
-                const data = e.target.result;
-                const workbook = read(data, {type: "array"});
-                const sheetName = workbook.SheetNames[0];
-                const worksheet = workbook.Sheets[sheetName];
-                const json: any = utils.sheet_to_json(worksheet);
-                let arr: any = []
-                let count = 0
-                json.slice(2).forEach(function(item: any){
-                    arr.push({article: item['ОРИГИНАЛЬНЫЙ НОМЕР'], name: item['ЗАПЧАСТЬ'], newName: '', fullNumber: ''})
-                })
-                console.log(arr)
+            reader.onload = (e: ProgressEvent<FileReader>) => {
+                if (e.target) {
+                    const data = e.target.result;
+                    const workbook = read(data, {type: "array"});
+                    const sheetName = workbook.SheetNames[0];
+                    const worksheet = workbook.Sheets[sheetName];
+                    const json: any = utils.sheet_to_json(worksheet);
+                    let arr: RezultDataType[] = []
+                    json.slice(0).forEach((item: any) => arr.push({
+                            number: item['ОРИГИНАЛЬНЫЙ НОМЕР'],
+                            fullNumber: '',
+                            name: item['ЗАПЧАСТЬ'],
+                            newName: ''
+                        })
+                    )
+                    console.log(arr)
+                }
             };
             reader.readAsArrayBuffer(e.target.files[0]);
         }

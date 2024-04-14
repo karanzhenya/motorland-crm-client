@@ -9,7 +9,6 @@ function Navbar() {
                 <img src={"https://www.pngplay.com/wp-content/uploads/4/Alphabet-M-PNG-Pic-Background.png"} alt="logo" style={{width: "96px"}}/>
                 <ul>
                     <li><Link to={"/"}>Calendar</Link></li>
-                    {/*<li><Link to={"tasks"}>Tasks</Link></li>*/}
                     <li><Link to={"excel"}>Excel</Link></li>
                     <li><Link to={"bmw"}>BMW</Link></li>
                     <li><Link to={"create"}>Добавить менеджера</Link></li>
